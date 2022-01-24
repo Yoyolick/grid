@@ -4,15 +4,20 @@
 <head>
     <title>grid</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <script src="{{url_for('static', filename='ts/index.js')}}"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@900&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <table id="root">
-        <tr>
-
-        </tr>
+    <div id="topbar">
+        <h1>tile</h1>
+    </div>
+    <table cellpadding="0" cellspacing="0" border="0" id="root">
     </table>
+    <script src="{{url_for('static', filename='ts/index.js')}}"></script>
 </body>
 
 </html>
