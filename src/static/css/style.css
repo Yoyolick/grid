@@ -8,10 +8,22 @@ body {
     background-color: rgb(19, 19, 19);
     font-family: 'Noto Serif KR', serif;
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
 }
 
 h1 {
     color: white;
 }
 
-#topbar {}
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(41, 41, 41);
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+}
+
+.main {
+    margin-top: 30px;
+}

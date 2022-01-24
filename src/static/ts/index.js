@@ -82,11 +82,13 @@ function refreshBoard() {
 refreshBoard()
 
 function changePixel(id) {
-    document.getElementById('pixel_' + id).style.backgroundColor = "black";
+    document.getElementById('pixel_' + id).style.backgroundColor = document.getElementById('colorpicker').value;
     data = {
         "id": String(id),
-        "color": "#000000"
+        "color": String(document.getElementById('colorpicker').value)
     }
     //console.log('set ' + id);
     basicxhr('change', data);
 }
+
+//pixelcanvas.live

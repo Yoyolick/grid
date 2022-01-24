@@ -12,11 +12,15 @@
 </head>
 
 <body>
-    <div id="topbar">
+    <div class="navbar">
         <h1>tile</h1>
+        <input type="color" id="colorpicker" value="#0000ff">
     </div>
-    <table cellpadding="0" cellspacing="0" border="0" id="root">
-    </table>
+    <div class="main">
+        <table cellpadding="0" cellspacing="0" border="0" id="root">
+        </table>
+    </div>
+
     <script src="{{url_for('static', filename='ts/index.js')}}"></script>
 </body>
 
